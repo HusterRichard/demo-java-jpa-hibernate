@@ -19,7 +19,7 @@
 ### 1.2.导入ddlSql ###
 	产品是否使用auto-ddl配置来自动生成DDL？
 	no，效率问题
-	编写自动化脚本调用ddl-auto，生成ddl—sql，并在适当的实际执行该sql语句
+	编写自动化脚本调用ddl-auto，生成ddl—sql，并在适当的时间执行该sql语句
 
 ## 2.数据库操纵DML ##
 - step1.使用JPA注解定义模型，将模型定义为Entity。
