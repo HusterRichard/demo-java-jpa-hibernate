@@ -1,6 +1,5 @@
 package com.huawei;
 
-import org.apache.tomcat.jdbc.pool.DataSource;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.huawei.core.ioc.IOCUtils;
 import com.huawei.domain.project.Project;
 import com.huawei.domain.project.ProjectRepository;
 import com.huawei.domain.scenario.Node;
@@ -30,6 +28,10 @@ public class ApplicationTests {
 
 	@Test
 	public void test() throws Exception {
+		
+		// 0.clear tables
+		projectRepository.deleteAll();
+		nodeRepository.deleteAll();
 
 		// 1.DML-insert
 		projectRepository.save(new Project("prj1", "zxc"));
