@@ -57,3 +57,4 @@
 	http://bog.didispace.com/springbootmultidatasource/
 	http://github.com/tonym2015/samples
 	http://stackflow.com/questions/26308035/spring-boot-spring-data-jpa-with-multiple-datasources
+	https://www.ibm.com/developerworks/cn/opensource/os-cn-spring-jpa/
